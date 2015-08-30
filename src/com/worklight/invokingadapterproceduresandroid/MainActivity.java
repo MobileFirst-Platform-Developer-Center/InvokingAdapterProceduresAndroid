@@ -59,14 +59,14 @@ public class MainActivity extends Activity {
 				
 				try {
 					//Define the URI of the resource. For a JS HTTP adapter: /adapters/{AdapterName}/{ProcedureName}
-					URI adapterPath = new URI("/adapters/RSSReader/getFeeds");
+					URI adapterPath = new URI("/adapters/RSSReader/getFeed");
 					
 					//Create WLResourceRequest object. Choose the HTTP Method (GET, POST, etc).
                     WLResourceRequest request = new WLResourceRequest(adapterPath,WLResourceRequest.GET);
 					
                     //For JavaScript-based adapters, use the parameter name "params" to set an array of parameters
                     //For Java adapters or other resources, you may use setQueryParameter for each parameter
-                    request.setQueryParameter("params","['technology']");
+                    request.setQueryParameter("params","['MobileFirst_Platform']");
                     
                     //There are multiple ways to handle the response. Here a listener is used.
                     request.send(new MyInvokeListener());
