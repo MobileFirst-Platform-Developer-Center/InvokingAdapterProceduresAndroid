@@ -18,12 +18,13 @@ limitations under the License.
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
+
 	<Button
- 		android:id="@+id/buttonConnect"
- 		android:layout_width="fill_parent"
- 		android:layout_height="wrap_content"
- 		android:text="@string/buttonConnect" 
- 	/>
+	    android:id="@+id/buttonConnect"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/buttonConnect" />
+
 	<Button
  		android:id="@+id/buttonInvoke"
  		android:layout_width="fill_parent"
